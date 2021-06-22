@@ -207,6 +207,6 @@ class AccountMove(models.Model):
                     orig.move_reverse_reconcile()
             return moves
 
-        except Exception, e:
+        except Exception as e:
             raise FailedJobError(
                 _("The details of the error:'%s'") % (unicode(e)))

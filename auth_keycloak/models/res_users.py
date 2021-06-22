@@ -2,8 +2,8 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 import werkzeug.urls
-import urlparse
-import urllib2
+from urllib.parse import urlparse
+from urllib.request import urlopen
 import json
 
 from odoo import api, fields, models
@@ -32,7 +32,7 @@ class ResUsers(models.Model):
                 url = endpoint + '&' + params
             else:
                 url = endpoint + '?' + params
-        f = urllib2.urlopen(url)
+        f = urlopen(url)
         response = f.read()
         return json.loads(response)
 

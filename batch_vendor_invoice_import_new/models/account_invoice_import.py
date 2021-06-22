@@ -131,7 +131,7 @@ class AccountInvoiceImport(models.TransientModel):
                 invoice2data_res = extract_data(file_name, templates=templates)
                 log_contents = log_capture_string.getvalue()
 #                log_capture_string.close()
-            except Exception, e:
+            except Exception as e:
                 raise UserError(_(
                     "PDF Invoice parsing failed. Error message: %s") % e)
             if not invoice2data_res:

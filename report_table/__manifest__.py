@@ -1,7 +1,7 @@
 {
     "name": "Generic Table Reporting",
     "version": "1.0",
-    "depends": ["report"],
+    "depends": ["web"],
     "author": "University of Namur",
     "category": "Extra Tools",
     "description": """This module is a utility for other reporting

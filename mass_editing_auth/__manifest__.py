@@ -28,8 +28,8 @@
     "description": """This module provides the authorisation for the Mass Editing module""",
     'depends': ['mass_editing'],
     'data': [
-        "security/security.xml",
-        "security/ir.model.access.csv",
+        # "security/security.xml",
+        # "security/ir.model.access.csv",
     ],
     'installable': True,
     'application': True,
